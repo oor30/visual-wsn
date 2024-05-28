@@ -19,6 +19,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           server-dir: ${{ secrets.SSH_SERVER_DIR }}
